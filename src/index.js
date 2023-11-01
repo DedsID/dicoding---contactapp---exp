@@ -1,13 +1,9 @@
-import { StrictMode } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
+import ContactApp from "./components/ContactApp";
 
-import App from "./App";
+// styling
+import "./styles/style.css";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+const root = createRoot(document.getElementById("root"));
+root.render(<ContactApp />);
